@@ -75,7 +75,6 @@ function displayCSE2(){
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
-    console.log("clicked") ;
 }
 function displayCCE2(){
     const cse = document.querySelector(".Branch-CSE-sem2");
