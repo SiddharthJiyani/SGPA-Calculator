@@ -58,6 +58,12 @@ semselector.addEventListener("click",function(){
     }
 })
 
+const calbtn = document.querySelector(".calbtn");
+
+calbtn.addEventListener("click",function(e){
+    
+})
+
 function removesemEvent()
 {
     csebtn.removeAttribute("onclick");
@@ -71,7 +77,8 @@ function displayCSE2(){
     const cce = document.querySelector(".Branch-CCE-sem2");
     const ece = document.querySelector(".Branch-ECE-sem2");
     const mme = document.querySelector(".Branch-MME-sem2");
-    cse.classList.add("active") ;
+    cse.classList.add("active");
+    calbtn.classList.add("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.remove("active");

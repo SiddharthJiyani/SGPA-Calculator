@@ -45,7 +45,6 @@
 .container{
     width:100% ;
     height: 100%;
-   
 }
 
 .semester-2{
@@ -62,6 +61,8 @@
     margin: 0 auto;
     margin-top: 60px;
     background-color:cornflowerblue;
+    /* position: relative; */
+
 }
 
 .Branch-CSE-sem2{
@@ -119,4 +120,28 @@
 
 .Branches{
     position: absolute;
+}
+
+.calbtn-section{
+    display: relative;
+    width:100%;
+    height:100% ;
+    justify-content: center; 
+}
+
+.calbtn{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 20%;
+    left:46%;
+    
+}
+.calbtn.active{
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* position: relative; */
 }
