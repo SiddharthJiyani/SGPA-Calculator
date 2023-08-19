@@ -23,6 +23,7 @@
     display: flex;
     gap: 7rem;
     margin-top: 10px;
+    /* z-index: 100; */
 }
 
 
@@ -45,9 +46,35 @@
 .container{
     width:100% ;
     height: 100%;
+    position: relative;
 }
 
+.Branches{
+    position: absolute;
+}
+
+.semester-1{
+    /* height: 80%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;;
+}
 .semester-2{
+    /* height: 80%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;;
+}
+.semester-3{
+    /* height: 80%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;;
+}
+.semester-4{
     /* height: 80%; */
     display: flex;
     justify-content: center;
@@ -60,9 +87,62 @@
     width: 50%;
     margin: 0 auto;
     margin-top: 60px;
-    background-color:cornflowerblue;
-    /* position: relative; */
+    /* background-color:cornflowerblue; */
+    position: absolute;
 
+}
+
+.Branch-CSE-sem1{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-CCE-sem1{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-ECE-sem1{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-MME-sem1{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+
+/* .active-CSE{
+    opacity: 1;
+    transition: 0.5s;
+} */
+
+.Branch-CSE-sem1.active{
+    /* opacity: 1; */
+    scale: 1;
+    /* transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) */
+    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Branch-CCE-sem1.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-ECE-sem1.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-MME-sem1.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .Branch-CSE-sem2{
@@ -71,18 +151,21 @@
     /* opacity: 0; */
     scale: 0;
 }
+
 .Branch-CCE-sem2{
     display: flex;
     flex-direction: column;
     /* opacity: 0; */
     scale: 0;
 }
+
 .Branch-ECE-sem2{
     display: flex;
     flex-direction: column;
     /* opacity: 0; */
     scale: 0;
 }
+
 .Branch-MME-sem2{
     display: flex;
     flex-direction: column;
@@ -100,27 +183,139 @@
     scale: 1;
     /* transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) */
     transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 100;
 }
 
 .Branch-CCE-sem2.active{
     /* opacity: 1; */
     scale: 1;
     transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 100;
+
 }
+
 .Branch-ECE-sem2.active{
     /* opacity: 1; */
     scale: 1;
     transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 100;
+
 }
+
 .Branch-MME-sem2.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 100;
+
+}
+
+.Branch-CSE-sem3{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-CCE-sem3{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-ECE-sem3{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-MME-sem3{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+
+/* .active-CSE{
+    opacity: 1;
+    transition: 0.5s;
+} */
+
+.Branch-CSE-sem3.active{
+    /* opacity: 1; */
+    scale: 1;
+    /* transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) */
+    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Branch-CCE-sem3.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-ECE-sem3.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-MME-sem3.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-CSE-sem4{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-CCE-sem4{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-ECE-sem4{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-MME-sem4{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+
+/* .active-CSE{
+    opacity: 1;
+    transition: 0.5s;
+} */
+
+.Branch-CSE-sem4.active{
+    /* opacity: 1; */
+    scale: 1;
+    /* transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) */
+    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Branch-CCE-sem4.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-ECE-sem4.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-MME-sem4.active{
     /* opacity: 1; */
     scale: 1;
     transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.Branches{
-    position: absolute;
-}
+
 
 .calbtn-section{
     display: relative;
