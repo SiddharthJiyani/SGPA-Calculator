@@ -118,7 +118,7 @@ const mapping = {
 
 
 const calbtn = document.getElementById("calbtn");
-
+calbtn.style.display = "none";
 
 calbtn.onclick = function () {
     let total=0;
@@ -159,6 +159,7 @@ let cur_sem;
 
 const Branches = document.querySelectorAll(".Branches") ;
 semselector.addEventListener("click", function () {
+    calbtn.style.display="none";
     console.log(Branches);
     for(let i =0;i<Branches.length;i++){
         Branches[i].classList.remove("active") ;
@@ -312,8 +313,9 @@ function displayCSE1() {
     const cce = document.querySelector(".Branch-CCE-sem1");
     const ece = document.querySelector(".Branch-ECE-sem1");
     const mme = document.querySelector(".Branch-MME-sem1");
+    calbtn.style.display = "block";
     cse.classList.add("active");
-    // calbtn.classList.add("active");
+    calbtn.style.display = "block";
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
@@ -323,6 +325,8 @@ function displayCCE1() {
     const cce = document.querySelector(".Branch-CCE-sem1");
     const ece = document.querySelector(".Branch-ECE-sem1");
     const mme = document.querySelector(".Branch-MME-sem1");
+    calbtn.style.display = "block";
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.add("active");
     ece.classList.remove("active");
@@ -334,6 +338,8 @@ function displayECE1() {
     const cce = document.querySelector(".Branch-CCE-sem1");
     const ece = document.querySelector(".Branch-ECE-sem1");
     const mme = document.querySelector(".Branch-MME-sem1");
+    calbtn.style.display = "block";
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.add("active");
@@ -345,6 +351,8 @@ function displayMME1() {
     const cce = document.querySelector(".Branch-CCE-sem1");
     const ece = document.querySelector(".Branch-ECE-sem1");
     const mme = document.querySelector(".Branch-MME-sem1");
+    calbtn.style.display = "block";
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
@@ -356,7 +364,9 @@ function displayCSE2() {
     const cce = document.querySelector(".Branch-CCE-sem2");
     const ece = document.querySelector(".Branch-ECE-sem2");
     const mme = document.querySelector(".Branch-MME-sem2");
+    calbtn.style.display = "block";
     cse.classList.add("active");
+    calbtn.style.display = "block";
     // calbtn.classList.add("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
@@ -367,6 +377,8 @@ function displayCCE2() {
     const cce = document.querySelector(".Branch-CCE-sem2");
     const ece = document.querySelector(".Branch-ECE-sem2");
     const mme = document.querySelector(".Branch-MME-sem2");
+    calbtn.style.display = "block";
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.add("active");
     ece.classList.remove("active");
@@ -378,6 +390,7 @@ function displayECE2() {
     const cce = document.querySelector(".Branch-CCE-sem2");
     const ece = document.querySelector(".Branch-ECE-sem2");
     const mme = document.querySelector(".Branch-MME-sem2");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.add("active");
@@ -389,6 +402,7 @@ function displayMME2() {
     const cce = document.querySelector(".Branch-CCE-sem2");
     const ece = document.querySelector(".Branch-ECE-sem2");
     const mme = document.querySelector(".Branch-MME-sem2");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
@@ -400,6 +414,7 @@ function displayCSE3() {
     const cce = document.querySelector(".Branch-CCE-sem3");
     const ece = document.querySelector(".Branch-ECE-sem3");
     const mme = document.querySelector(".Branch-MME-sem3");
+    calbtn.style.display = "block";
     cse.classList.add("active");
     // calbtn.classList.add("active");
     cce.classList.remove("active");
@@ -411,6 +426,7 @@ function displayCCE3() {
     const cce = document.querySelector(".Branch-CCE-sem3");
     const ece = document.querySelector(".Branch-ECE-sem3");
     const mme = document.querySelector(".Branch-MME-sem3");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.add("active");
     ece.classList.remove("active");
@@ -422,6 +438,7 @@ function displayECE3() {
     const cce = document.querySelector(".Branch-CCE-sem3");
     const ece = document.querySelector(".Branch-ECE-sem3");
     const mme = document.querySelector(".Branch-MME-sem3");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.add("active");
@@ -433,6 +450,7 @@ function displayMME3() {
     const cce = document.querySelector(".Branch-CCE-sem3");
     const ece = document.querySelector(".Branch-ECE-sem3");
     const mme = document.querySelector(".Branch-MME-sem3");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
@@ -444,6 +462,7 @@ function displayCSE4() {
     const cce = document.querySelector(".Branch-CCE-sem4");
     const ece = document.querySelector(".Branch-ECE-sem4");
     const mme = document.querySelector(".Branch-MME-sem4");
+    calbtn.style.display = "block";
     cse.classList.add("active");
     // calbtn.classList.add("active");
     cce.classList.remove("active");
@@ -455,6 +474,7 @@ function displayCCE4() {
     const cce = document.querySelector(".Branch-CCE-sem4");
     const ece = document.querySelector(".Branch-ECE-sem4");
     const mme = document.querySelector(".Branch-MME-sem4");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.add("active");
     ece.classList.remove("active");
@@ -466,6 +486,7 @@ function displayECE4() {
     const cce = document.querySelector(".Branch-CCE-sem4");
     const ece = document.querySelector(".Branch-ECE-sem4");
     const mme = document.querySelector(".Branch-MME-sem4");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.add("active");
@@ -477,6 +498,7 @@ function displayMME4() {
     const cce = document.querySelector(".Branch-CCE-sem4");
     const ece = document.querySelector(".Branch-ECE-sem4");
     const mme = document.querySelector(".Branch-MME-sem4");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
@@ -488,6 +510,7 @@ function displayCSE5() {
     const cce = document.querySelector(".Branch-CCE-sem5");
     const ece = document.querySelector(".Branch-ECE-sem5");
     const mme = document.querySelector(".Branch-MME-sem5");
+    calbtn.style.display = "block";
     cse.classList.add("active");
     // calbtn.classList.add("active");
     cce.classList.remove("active");
@@ -499,6 +522,7 @@ function displayCCE5() {
     const cce = document.querySelector(".Branch-CCE-sem5");
     const ece = document.querySelector(".Branch-ECE-sem5");
     const mme = document.querySelector(".Branch-MME-sem5");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.add("active");
     ece.classList.remove("active");
@@ -510,6 +534,7 @@ function displayECE5() {
     const cce = document.querySelector(".Branch-CCE-sem5");
     const ece = document.querySelector(".Branch-ECE-sem5");
     const mme = document.querySelector(".Branch-MME-sem5");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.add("active");
@@ -521,6 +546,7 @@ function displayMME5() {
     const cce = document.querySelector(".Branch-CCE-sem5");
     const ece = document.querySelector(".Branch-ECE-sem5");
     const mme = document.querySelector(".Branch-MME-sem5");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
@@ -532,6 +558,7 @@ function displayCSE6() {
     const cce = document.querySelector(".Branch-CCE-sem6");
     const ece = document.querySelector(".Branch-ECE-sem6");
     const mme = document.querySelector(".Branch-MME-sem6");
+    calbtn.style.display = "block";
     cse.classList.add("active");
     // calbtn.classList.add("active");
     cce.classList.remove("active");
@@ -543,6 +570,7 @@ function displayCCE6() {
     const cce = document.querySelector(".Branch-CCE-sem6");
     const ece = document.querySelector(".Branch-ECE-sem6");
     const mme = document.querySelector(".Branch-MME-sem6");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.add("active");
     ece.classList.remove("active");
@@ -554,6 +582,7 @@ function displayECE6() {
     const cce = document.querySelector(".Branch-CCE-sem6");
     const ece = document.querySelector(".Branch-ECE-sem6");
     const mme = document.querySelector(".Branch-MME-sem6");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.add("active");
@@ -565,6 +594,7 @@ function displayMME6() {
     const cce = document.querySelector(".Branch-CCE-sem6");
     const ece = document.querySelector(".Branch-ECE-sem6");
     const mme = document.querySelector(".Branch-MME-sem6");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
@@ -577,6 +607,7 @@ function displayCSE7() {
     const cce = document.querySelector(".Branch-CCE-sem7");
     const ece = document.querySelector(".Branch-ECE-sem7");
     const mme = document.querySelector(".Branch-MME-sem7");
+    calbtn.style.display = "block";
     cse.classList.add("active");
     // calbtn.classList.add("active");
     cce.classList.remove("active");
@@ -589,6 +620,7 @@ function displayCCE7() {
     const cce = document.querySelector(".Branch-CCE-sem7");
     const ece = document.querySelector(".Branch-ECE-sem7");
     const mme = document.querySelector(".Branch-MME-sem7");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.add("active");
     ece.classList.remove("active");
@@ -601,6 +633,7 @@ function displayECE7() {
     const cce = document.querySelector(".Branch-CCE-sem7");
     const ece = document.querySelector(".Branch-ECE-sem7");
     const mme = document.querySelector(".Branch-MME-sem7");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.add("active");
@@ -613,6 +646,7 @@ function displayMME7() {
     const cce = document.querySelector(".Branch-CCE-sem7");
     const ece = document.querySelector(".Branch-ECE-sem7");
     const mme = document.querySelector(".Branch-MME-sem7");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
@@ -625,6 +659,7 @@ function displayCSE8() {
     const cce = document.querySelector(".Branch-CCE-sem8");
     const ece = document.querySelector(".Branch-ECE-sem8");
     const mme = document.querySelector(".Branch-MME-sem8");
+    calbtn.style.display = "block";
     cse.classList.add("active");
     // calbtn.classList.add("active");
     cce.classList.remove("active");
@@ -637,6 +672,7 @@ function displayCCE8() {
     const cce = document.querySelector(".Branch-CCE-sem8");
     const ece = document.querySelector(".Branch-ECE-sem8");
     const mme = document.querySelector(".Branch-MME-sem8");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.add("active");
     ece.classList.remove("active");
@@ -649,6 +685,7 @@ function displayECE8() {
     const cce = document.querySelector(".Branch-CCE-sem8");
     const ece = document.querySelector(".Branch-ECE-sem8");
     const mme = document.querySelector(".Branch-MME-sem8");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.add("active");
@@ -661,6 +698,7 @@ function displayMME8() {
     const cce = document.querySelector(".Branch-CCE-sem8");
     const ece = document.querySelector(".Branch-ECE-sem8");
     const mme = document.querySelector(".Branch-MME-sem8");
+    calbtn.style.display = "block";
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
