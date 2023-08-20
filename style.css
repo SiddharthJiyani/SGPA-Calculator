@@ -81,6 +81,13 @@
     align-items: center;
     position: relative;;
 }
+.semester-5{
+    /* height: 80%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;;
+}
 
 .sem-container{
     height: 80%;
@@ -117,10 +124,6 @@
     scale: 0;
 }
 
-/* .active-CSE{
-    opacity: 1;
-    transition: 0.5s;
-} */
 
 .Branch-CSE-sem1.active{
     /* opacity: 1; */
@@ -173,10 +176,6 @@
     scale: 0;
 }
 
-/* .active-CSE{
-    opacity: 1;
-    transition: 0.5s;
-} */
 
 .Branch-CSE-sem2.active{
     /* opacity: 1; */
@@ -235,10 +234,6 @@
     scale: 0;
 }
 
-/* .active-CSE{
-    opacity: 1;
-    transition: 0.5s;
-} */
 
 .Branch-CSE-sem3.active{
     /* opacity: 1; */
@@ -287,10 +282,6 @@
     scale: 0;
 }
 
-/* .active-CSE{
-    opacity: 1;
-    transition: 0.5s;
-} */
 
 .Branch-CSE-sem4.active{
     /* opacity: 1; */
@@ -314,6 +305,204 @@
     scale: 1;
     transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+.Branch-CSE-sem5{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-CCE-sem5{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-ECE-sem5{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-MME-sem5{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+
+
+.Branch-CSE-sem5.active{
+    /* opacity: 1; */
+    scale: 1;
+    /* transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) */
+    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Branch-CCE-sem5.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-ECE-sem5.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-MME-sem5.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Branch-CSE-sem6{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-CCE-sem6{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-ECE-sem6{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-MME-sem6{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+
+
+.Branch-CSE-sem6.active{
+    /* opacity: 1; */
+    scale: 1;
+    /* transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) */
+    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Branch-CCE-sem6.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-ECE-sem6.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-MME-sem6.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.Branch-CSE-sem7{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-CCE-sem7{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-ECE-sem7{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-MME-sem7{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+
+
+.Branch-CSE-sem7.active{
+    /* opacity: 1; */
+    scale: 1;
+    /* transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) */
+    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Branch-CCE-sem7.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-ECE-sem7.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-MME-sem7.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.Branch-CSE-sem8{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-CCE-sem8{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-ECE-sem8{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+.Branch-MME-sem8{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0; */
+    scale: 0;
+}
+
+
+.Branch-CSE-sem8.active{
+    /* opacity: 1; */
+    scale: 1;
+    /* transition: 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) */
+    transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.Branch-CCE-sem8.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-ECE-sem8.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.Branch-MME-sem8.active{
+    /* opacity: 1; */
+    scale: 1;
+    transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 
 
 
