@@ -263,7 +263,7 @@ let cur_sem="Choose";
 
 const Branches = document.querySelectorAll(".Branches") ;
 
-semselector.addEventListener("click", function () {
+semselector.addEventListener("change", function () {
     calbtn.style.display="none";
     // cgpa.innerHTML = "";
     // result.classList.remove("active");
