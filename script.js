@@ -122,6 +122,8 @@ calbtn.style.display = "none";
 let cgpa = document.querySelectorAll(".CG");
 let result = document.getElementsByClassName(".result");
 
+const popup = document.querySelector(".popup");
+
 calbtn.onclick = function () {
     let total=0;
     let earned = 0;
@@ -147,9 +149,16 @@ calbtn.onclick = function () {
     // cgpa.innerHTML = ans.toFixed(3);
     // result.classList.add("active");
 
+    popup.firstChild.nextElementSibling.innerHTML =  `Your SGPA is ${(earned*10/total).toFixed(2)}`;
+    popup.style.scale = "1";
+    popup.style.transition = "0.6s cubic-bezier(0.165, 0.84, 0.44, 1)";
 };
 
-
+const okbtn = document.querySelector(".okbtn");
+okbtn.onclick = function(){
+    // const popup = document.querySelector(".popup");
+    popup.style.scale="0";
+}
 
 
 const csebtn = document.querySelector(".CSE");
@@ -182,7 +191,7 @@ csebtn.addEventListener('click', function () {
 });
 
 ccebtn.addEventListener('click', function () {
-
+    popup.style.scale="0";
     if(cur_sem != "Choose"){
     
         ccebtn.style.backgroundColor = "#1a1a1a";
@@ -204,7 +213,7 @@ ccebtn.addEventListener('click', function () {
 });
 
 ecebtn.addEventListener('click', function () {
-    
+    popup.style.scale="0";
     if(cur_sem != "Choose"){
 
         ecebtn.style.backgroundColor = "#1a1a1a";
@@ -226,7 +235,7 @@ ecebtn.addEventListener('click', function () {
 });
 
 mmebtn.addEventListener('click', function () {
-
+    popup.style.scale="0";
     if(cur_sem != "Choose"){
 
         mmebtn.style.backgroundColor = "#1a1a1a";
@@ -258,7 +267,7 @@ semselector.addEventListener("click", function () {
     calbtn.style.display="none";
     // cgpa.innerHTML = "";
     // result.classList.remove("active");
-
+    popup.style.scale="0";
     csebtn.style.backgroundColor = "transparent";
     csebtn.style.boxShodow = "none";
     csebtn.style.transform = "translateY(2px)";
