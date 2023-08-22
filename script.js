@@ -119,48 +119,163 @@ const mapping = {
 
 const calbtn = document.getElementById("calbtn");
 calbtn.style.display = "none";
+let cgpa = document.querySelectorAll(".CG");
+let result = document.getElementsByClassName(".result");
 
 calbtn.onclick = function () {
     let total=0;
     let earned = 0;
-    console.log("earn-",earned);
     let active = document.querySelector(".active");
-    console.log(active);
+    // console.log(active);
     let x = active.firstChild.nextElementSibling;
+    // console.log("x:",x);
     let list = x.children;
+    // console.log("list:",list);
     for (let i = 0; i < list.length; i++) {
         let prefinal = list[i].children[0].firstChild.nextElementSibling.innerHTML;
         let grade =
             list[i].children[0].firstChild.nextElementSibling.parentElement
                 .children[1].value;
 
-        console.log(prefinal, "-", courses[`${prefinal}`]);
-        console.log(prefinal, "-", mapping[`${grade}`]);
+        // console.log(prefinal, "-", courses[`${prefinal}`]);
+        // console.log(prefinal, "-", mapping[`${grade}`]);
         earned = earned + courses[prefinal.trim()] * mapping[grade];
         total = total + courses[prefinal.trim()] * 10;
-        console.log("CG=",earned*10/total);
     }
-    
-    // for (let i = 0; i < active.length-1; i++) 
-    // {
-    //     active[i].remove();        
-    // }
+    let ans = (earned * 10) / total
+    console.log("CG=",earned*10/total);
+    // cgpa.innerHTML = ans.toFixed(3);
+    // result.classList.add("active");
 
 };
+
+
+
 
 const csebtn = document.querySelector(".CSE");
 const ccebtn = document.querySelector(".CCE");
 const ecebtn = document.querySelector(".ECE");
 const mmebtn = document.querySelector(".MME");
 
+csebtn.addEventListener('click', function () {
+
+    // csebtn.style.color = "white";
+    if(cur_sem != "Choose"){
+        csebtn.style.backgroundColor = "#1a1a1a";
+        csebtn.style.boxShodow = "rgba(0, 0, 0, 0.25) 0 8px 15px";
+        csebtn.style.transform = "translateY(-2px)";
+
+        ccebtn.style.backgroundColor = "transparent";
+        ccebtn.style.boxShodow = "none";
+        ccebtn.style.transform = "translateY(2px)";
+
+        ecebtn.style.backgroundColor = "transparent";
+        ecebtn.style.boxShodow = "none";
+        ecebtn.style.transform = "translateY(2px)";
+
+        mmebtn.style.backgroundColor = "transparent";
+        mmebtn.style.boxShodow = "none";
+        mmebtn.style.transform = "translateY(2px)";
+    }
+
+
+});
+
+ccebtn.addEventListener('click', function () {
+
+    if(cur_sem != "Choose"){
+    
+        ccebtn.style.backgroundColor = "#1a1a1a";
+        ccebtn.style.boxShodow = "rgba(0, 0, 0, 0.25) 0 8px 15px";
+        ccebtn.style.transform = "translateY(-2px)";
+
+        csebtn.style.backgroundColor = "transparent";
+        csebtn.style.boxShodow = "none";
+        csebtn.style.transform = "translateY(2px)";
+
+        ecebtn.style.backgroundColor = "transparent";
+        ecebtn.style.boxShodow = "none";
+        ecebtn.style.transform = "translateY(2px)";
+
+        mmebtn.style.backgroundColor = "transparent";
+        mmebtn.style.boxShodow = "none";
+        mmebtn.style.transform = "translateY(2px)";
+    }
+});
+
+ecebtn.addEventListener('click', function () {
+    
+    if(cur_sem != "Choose"){
+
+        ecebtn.style.backgroundColor = "#1a1a1a";
+        ecebtn.style.boxShodow = "rgba(0, 0, 0, 0.25) 0 8px 15px";
+        ecebtn.style.transform = "translateY(-2px)";
+
+        csebtn.style.backgroundColor = "transparent";
+        csebtn.style.boxShodow = "none";
+        csebtn.style.transform = "translateY(2px)";
+
+        ccebtn.style.backgroundColor = "transparent";
+        ccebtn.style.boxShodow = "none";
+        ccebtn.style.transform = "translateY(2px)";
+
+        mmebtn.style.backgroundColor = "transparent";
+        mmebtn.style.boxShodow = "none";
+        mmebtn.style.transform = "translateY(2px)";
+    }
+});
+
+mmebtn.addEventListener('click', function () {
+
+    if(cur_sem != "Choose"){
+
+        mmebtn.style.backgroundColor = "#1a1a1a";
+        mmebtn.style.boxShodow = "rgba(0, 0, 0, 0.25) 0 8px 15px";
+        mmebtn.style.transform = "translateY(-2px)";
+
+        csebtn.style.backgroundColor = "transparent";
+        csebtn.style.boxShodow = "none";
+        csebtn.style.transform = "translateY(2px)";
+
+        ccebtn.style.backgroundColor = "transparent";
+        ccebtn.style.boxShodow = "none";
+        ccebtn.style.transform = "translateY(2px)";
+
+        ecebtn.style.backgroundColor = "transparent";
+        ecebtn.style.boxShodow = "none";
+        ecebtn.style.transform = "translateY(2px)";
+    }
+});
+
+
 const semselector = document.querySelector(".semselector");
 
-let cur_sem;
+let cur_sem="Choose";
 
 const Branches = document.querySelectorAll(".Branches") ;
+
 semselector.addEventListener("click", function () {
     calbtn.style.display="none";
-    console.log(Branches);
+    // cgpa.innerHTML = "";
+    // result.classList.remove("active");
+
+    csebtn.style.backgroundColor = "transparent";
+    csebtn.style.boxShodow = "none";
+    csebtn.style.transform = "translateY(2px)";
+
+    ccebtn.style.backgroundColor = "transparent";
+    ccebtn.style.boxShodow = "none";
+    ccebtn.style.transform = "translateY(2px)";
+
+    ecebtn.style.backgroundColor = "transparent";
+    ecebtn.style.boxShodow = "none";
+    ecebtn.style.transform = "translateY(2px)";
+
+    mmebtn.style.backgroundColor = "transparent";
+    mmebtn.style.boxShodow = "none";
+    mmebtn.style.transform = "translateY(2px)";
+
+    // console.log(Branches);
     for(let i =0;i<Branches.length;i++){
         Branches[i].classList.remove("active") ;
     }
@@ -331,7 +446,6 @@ function displayCCE1() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 function displayECE1() {
     const cse = document.querySelector(".Branch-CSE-sem1");
@@ -344,7 +458,6 @@ function displayECE1() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 function displayMME1() {
     const cse = document.querySelector(".Branch-CSE-sem1");
@@ -357,7 +470,6 @@ function displayMME1() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
-    console.log("clicked");
 }
 function displayCSE2() {
     const cse = document.querySelector(".Branch-CSE-sem2");
@@ -383,7 +495,6 @@ function displayCCE2() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 function displayECE2() {
     const cse = document.querySelector(".Branch-CSE-sem2");
@@ -395,7 +506,6 @@ function displayECE2() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 function displayMME2() {
     const cse = document.querySelector(".Branch-CSE-sem2");
@@ -407,7 +517,6 @@ function displayMME2() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
-    console.log("clicked");
 }
 function displayCSE3() {
     const cse = document.querySelector(".Branch-CSE-sem3");
@@ -431,7 +540,6 @@ function displayCCE3() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 function displayECE3() {
     const cse = document.querySelector(".Branch-CSE-sem3");
@@ -443,7 +551,6 @@ function displayECE3() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 function displayMME3() {
     const cse = document.querySelector(".Branch-CSE-sem3");
@@ -455,7 +562,6 @@ function displayMME3() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
-    console.log("clicked");
 }
 function displayCSE4() {
     const cse = document.querySelector(".Branch-CSE-sem4");
@@ -479,7 +585,6 @@ function displayCCE4() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 function displayECE4() {
     const cse = document.querySelector(".Branch-CSE-sem4");
@@ -491,7 +596,6 @@ function displayECE4() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 function displayMME4() {
     const cse = document.querySelector(".Branch-CSE-sem4");
@@ -503,7 +607,6 @@ function displayMME4() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
-    console.log("clicked");
 }
 function displayCSE5() {
     const cse = document.querySelector(".Branch-CSE-sem5");
@@ -527,7 +630,6 @@ function displayCCE5() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 function displayECE5() {
     const cse = document.querySelector(".Branch-CSE-sem5");
@@ -539,7 +641,6 @@ function displayECE5() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 function displayMME5() {
     const cse = document.querySelector(".Branch-CSE-sem5");
@@ -551,7 +652,6 @@ function displayMME5() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
-    console.log("clicked");
 }
 function displayCSE6() {
     const cse = document.querySelector(".Branch-CSE-sem6");
@@ -575,7 +675,6 @@ function displayCCE6() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 function displayECE6() {
     const cse = document.querySelector(".Branch-CSE-sem6");
@@ -587,7 +686,6 @@ function displayECE6() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 function displayMME6() {
     const cse = document.querySelector(".Branch-CSE-sem6");
@@ -599,7 +697,6 @@ function displayMME6() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
-    console.log("clicked");
 }
 
 function displayCSE7() {
@@ -625,7 +722,6 @@ function displayCCE7() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 
 function displayECE7() {
@@ -638,7 +734,6 @@ function displayECE7() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 
 function displayMME7() {
@@ -651,7 +746,6 @@ function displayMME7() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
-    console.log("clicked");
 }
 
 function displayCSE8() {
@@ -677,7 +771,6 @@ function displayCCE8() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 
 function displayECE8() {
@@ -690,7 +783,6 @@ function displayECE8() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
-    console.log("clicked");
 }
 
 function displayMME8() {
@@ -703,7 +795,6 @@ function displayMME8() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
-    console.log("clicked");
 }
 
 
