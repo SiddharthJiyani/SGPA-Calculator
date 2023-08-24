@@ -107,12 +107,29 @@
 
 } */
 
+.overlay{
+    position: fixed;
+    background-color: #5f5f5f83;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
 
+.overlayactive{
+    opacity: 1;
+    pointer-events: initial;
+}
 
 .popup{
     /* width: 20%; */
     /* height: 20%; */
-    background-color: rgb(168,168,168);
+    /* background-color: rgb(168,168,168); */
+    background-color: aliceblue;
+
     border-radius: 10px;
     position: absolute;
     top: 50%;
@@ -126,6 +143,7 @@
     display: flex;
     /* display: none; */
     scale: 0;
+    z-index: 100;
     flex-direction: column;
 }
 
