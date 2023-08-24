@@ -160,6 +160,11 @@ calbtn.onclick = function () {
     popup.style.transition = "0.6s cubic-bezier(0.165, 0.84, 0.44, 1)";
 };
 
+const closeModal = () =>{
+    popup.style.scale="0";
+    overlay.classList.remove("overlayactive");
+}
+
 
 // else if( cur_sem != "Choose" && ){
 //     instructions.innerText = "Select Branch to continue"
