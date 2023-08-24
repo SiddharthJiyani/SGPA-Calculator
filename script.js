@@ -18,10 +18,10 @@ let courses = {
     "TCE": 3,
     "M3": 4,
     "EFE/PTS": 3,
-    "COA": 3,
-    "AP": 3,
+    "COA": 4,
+    "AP": 4,
     "OTA": 3,
-    "IDBMS": 3,
+    "IDBMS": 4,
     "ANEL": 3,
     "NAS" : 3,
     "ANEL(L)" : 2,
@@ -123,8 +123,7 @@ const calbtn = document.getElementById("calbtn");
 calbtn.style.display = "none";
 let cgpa = document.querySelectorAll(".CG");
 let result = document.getElementsByClassName(".result");
-let instructions = document.querySelector(".instructions");
-let instructions_2 = document.querySelector(".instructions_2");
+
 
 
 const popup = document.querySelector(".popup");
@@ -164,13 +163,11 @@ calbtn.onclick = function () {
 
 const closeModal = () =>{
     popup.style.scale="0";
+    handcraftpopup.style.scale=0;
     overlay.classList.remove("overlayactive");
 }
 
 
-// else if( cur_sem != "Choose" && ){
-//     instructions.innerText = "Select Branch to continue"
-// }
 const okbtn = document.querySelector(".okbtn");
 okbtn.onclick = function(){
     // const popup = document.querySelector(".popup");
@@ -280,8 +277,13 @@ const semselector = document.querySelector(".semselector");
 
 const Branches = document.querySelectorAll(".Branches") ;
 
+let instructions = document.querySelector(".instructions");
+let instructions_2 = document.querySelector(".instructions_2");
+// instructions_2.style.display="none";
+
 semselector.addEventListener("change", function () {
     calbtn.style.display="none";
+
     // cgpa.innerHTML = "";
     // result.classList.remove("active");
     popup.style.scale="0";
@@ -308,13 +310,7 @@ semselector.addEventListener("change", function () {
     cur_sem = semselector.value;
     // console.log(cur_sem);
 
-    // if(cur_sem === "Choose"){
-    //     instructions_2.style.scale = "0";
-    // }
-    // else if(cur_sem != "Choose"){
-    //     instructions_2.style.scale = "1";
-    //     instructions.style.display = "none";
-    // }
+
 
     removesemEvent();
     console.log();
@@ -467,6 +463,7 @@ function displayCSE1() {
     calbtn.style.display = "block";
     cce.classList.remove("active");
     ece.classList.remove("active");
+
     mme.classList.remove("active");
 }
 function displayCCE1() {
@@ -479,6 +476,7 @@ function displayCCE1() {
     cse.classList.remove("active");
     cce.classList.add("active");
     ece.classList.remove("active");
+    
     mme.classList.remove("active");
 }
 function displayECE1() {
@@ -491,6 +489,7 @@ function displayECE1() {
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.add("active");
+    
     mme.classList.remove("active");
 }
 function displayMME1() {
@@ -503,6 +502,7 @@ function displayMME1() {
     cse.classList.remove("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
+    
     mme.classList.add("active");
 }
 function displayCSE2() {
@@ -515,6 +515,7 @@ function displayCSE2() {
     calbtn.style.display = "block";
     // calbtn.classList.add("active");
     cce.classList.remove("active");
+    
     ece.classList.remove("active");
     mme.classList.remove("active");
 }
@@ -528,6 +529,7 @@ function displayCCE2() {
     cse.classList.remove("active");
     cce.classList.add("active");
     ece.classList.remove("active");
+    
     mme.classList.remove("active");
 }
 function displayECE2() {
@@ -540,6 +542,7 @@ function displayECE2() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
+    
 }
 function displayMME2() {
     const cse = document.querySelector(".Branch-CSE-sem2");
@@ -551,6 +554,7 @@ function displayMME2() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
+    
 }
 function displayCSE3() {
     const cse = document.querySelector(".Branch-CSE-sem3");
@@ -562,6 +566,7 @@ function displayCSE3() {
     // calbtn.classList.add("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
+    
     mme.classList.remove("active");
 }
 function displayCCE3() {
@@ -574,6 +579,7 @@ function displayCCE3() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
+    
 }
 function displayECE3() {
     const cse = document.querySelector(".Branch-CSE-sem3");
@@ -585,6 +591,7 @@ function displayECE3() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
+    
 }
 function displayMME3() {
     const cse = document.querySelector(".Branch-CSE-sem3");
@@ -596,6 +603,7 @@ function displayMME3() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
+    
 }
 function displayCSE4() {
     const cse = document.querySelector(".Branch-CSE-sem4");
@@ -607,6 +615,7 @@ function displayCSE4() {
     // calbtn.classList.add("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
+    
     mme.classList.remove("active");
 }
 function displayCCE4() {
@@ -619,6 +628,7 @@ function displayCCE4() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
+    
 }
 function displayECE4() {
     const cse = document.querySelector(".Branch-CSE-sem4");
@@ -630,6 +640,7 @@ function displayECE4() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
+    
 }
 function displayMME4() {
     const cse = document.querySelector(".Branch-CSE-sem4");
@@ -641,6 +652,7 @@ function displayMME4() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
+    
 }
 function displayCSE5() {
     const cse = document.querySelector(".Branch-CSE-sem5");
@@ -652,6 +664,7 @@ function displayCSE5() {
     // calbtn.classList.add("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
+    
     mme.classList.remove("active");
 }
 function displayCCE5() {
@@ -664,6 +677,7 @@ function displayCCE5() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
+    
 }
 function displayECE5() {
     const cse = document.querySelector(".Branch-CSE-sem5");
@@ -675,6 +689,7 @@ function displayECE5() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
+    
 }
 function displayMME5() {
     const cse = document.querySelector(".Branch-CSE-sem5");
@@ -686,6 +701,7 @@ function displayMME5() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
+    
 }
 function displayCSE6() {
     const cse = document.querySelector(".Branch-CSE-sem6");
@@ -697,6 +713,7 @@ function displayCSE6() {
     // calbtn.classList.add("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
+    
     mme.classList.remove("active");
 }
 function displayCCE6() {
@@ -709,6 +726,7 @@ function displayCCE6() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
+    
 }
 function displayECE6() {
     const cse = document.querySelector(".Branch-CSE-sem6");
@@ -720,6 +738,7 @@ function displayECE6() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
+    
 }
 function displayMME6() {
     const cse = document.querySelector(".Branch-CSE-sem6");
@@ -731,6 +750,7 @@ function displayMME6() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
+    
 }
 
 function displayCSE7() {
@@ -743,6 +763,7 @@ function displayCSE7() {
     // calbtn.classList.add("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
+    
     mme.classList.remove("active");
 }
 
@@ -756,6 +777,7 @@ function displayCCE7() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
+    
 }
 
 function displayECE7() {
@@ -768,6 +790,7 @@ function displayECE7() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
+    
 }
 
 function displayMME7() {
@@ -780,6 +803,7 @@ function displayMME7() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
+    
 }
 
 function displayCSE8() {
@@ -792,6 +816,7 @@ function displayCSE8() {
     // calbtn.classList.add("active");
     cce.classList.remove("active");
     ece.classList.remove("active");
+    
     mme.classList.remove("active");
 }
 
@@ -805,6 +830,7 @@ function displayCCE8() {
     cce.classList.add("active");
     ece.classList.remove("active");
     mme.classList.remove("active");
+    
 }
 
 function displayECE8() {
@@ -817,6 +843,7 @@ function displayECE8() {
     cce.classList.remove("active");
     ece.classList.add("active");
     mme.classList.remove("active");
+    
 }
 
 function displayMME8() {
@@ -829,10 +856,16 @@ function displayMME8() {
     cce.classList.remove("active");
     ece.classList.remove("active");
     mme.classList.add("active");
+    
 }
 
 
+const handcraftbtn = document.querySelector(".handcraft-btn");
+const handcraftpopup = document.querySelector(".handcrafters");
 
-
-
+handcraftbtn.onclick = function(){
+    handcraftpopup.style.scale=1;
+    handcraftpopup.style.transition = "0.6s cubic-bezier(0.165, 0.84, 0.44, 1)";
+    overlay.classList.add("overlayactive");
+}
 
