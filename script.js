@@ -118,11 +118,14 @@ const mapping = {
 
 const overlay = document.querySelector(".overlay");
 
-
+let cur_sem="Choose";
 const calbtn = document.getElementById("calbtn");
 calbtn.style.display = "none";
 let cgpa = document.querySelectorAll(".CG");
 let result = document.getElementsByClassName(".result");
+let instructions = document.querySelector(".instructions");
+let instructions_2 = document.querySelector(".instructions_2");
+
 
 const popup = document.querySelector(".popup");
 
@@ -157,6 +160,10 @@ calbtn.onclick = function () {
     popup.style.transition = "0.6s cubic-bezier(0.165, 0.84, 0.44, 1)";
 };
 
+
+// else if( cur_sem != "Choose" && ){
+//     instructions.innerText = "Select Branch to continue"
+// }
 const okbtn = document.querySelector(".okbtn");
 okbtn.onclick = function(){
     // const popup = document.querySelector(".popup");
@@ -263,7 +270,6 @@ mmebtn.addEventListener('click', function () {
 
 const semselector = document.querySelector(".semselector");
 
-let cur_sem="Choose";
 
 const Branches = document.querySelectorAll(".Branches") ;
 
@@ -293,6 +299,15 @@ semselector.addEventListener("change", function () {
         Branches[i].classList.remove("active") ;
     }
     cur_sem = semselector.value;
+    // console.log(cur_sem);
+
+    // if(cur_sem === "Choose"){
+    //     instructions_2.style.scale = "0";
+    // }
+    // else if(cur_sem != "Choose"){
+    //     instructions_2.style.scale = "1";
+    //     instructions.style.display = "none";
+    // }
 
     removesemEvent();
     console.log();
@@ -305,7 +320,6 @@ semselector.addEventListener("change", function () {
     const sem7 = document.querySelector(".semester-7");
     const sem8 = document.querySelector(".semester-8");
 
-    // console.log(sem1);
 
     if (cur_sem == "Sem-1") {
         sem1.style.display = "flex";
@@ -809,6 +823,8 @@ function displayMME8() {
     ece.classList.remove("active");
     mme.classList.add("active");
 }
+
+
 
 
 
