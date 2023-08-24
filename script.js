@@ -78,7 +78,7 @@ let courses = {
     "PE-9":3,
     "CD":3,
     "BTP":3,
-    "OR-1":3,
+    "OE-1":3,
     "OE-2":3,
     "OE-3":3,
     "OE-4":3,
@@ -148,6 +148,8 @@ calbtn.onclick = function () {
         // console.log(prefinal, "-", mapping[`${grade}`]);
         earned = earned + courses[prefinal.trim()] * mapping[grade];
         total = total + courses[prefinal.trim()] * 10;
+        console.log(earned);
+        // console.log(total);
     }
     let ans = (earned * 10) / total
     console.log("CG=",earned*10/total);
