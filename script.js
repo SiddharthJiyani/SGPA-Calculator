@@ -116,6 +116,8 @@ const mapping = {
     "Choose": 0,
 };
 
+const overlay = document.querySelector(".overlay");
+
 
 const calbtn = document.getElementById("calbtn");
 calbtn.style.display = "none";
@@ -148,6 +150,7 @@ calbtn.onclick = function () {
     console.log("CG=",earned*10/total);
     // cgpa.innerHTML = ans.toFixed(3);
     // result.classList.add("active");
+    overlay.classList.add("overlayactive");
 
     popup.firstChild.nextElementSibling.innerHTML =  `Your SGPA is ${(earned*10/total).toFixed(2)}`;
     popup.style.scale = "1";
@@ -158,6 +161,7 @@ const okbtn = document.querySelector(".okbtn");
 okbtn.onclick = function(){
     // const popup = document.querySelector(".popup");
     popup.style.scale="0";
+    overlay.classList.remove("overlayactive");
 }
 
 
