@@ -159,8 +159,9 @@
     min-width: 0;
     outline: none;
     position: fixed;
-    top: 93%;
-    right: 10px;
+    top: 91%;
+    /* margin-bottom: 8px; */
+    right: 22px;
     height: 50px;
     width: 50px;
     font-size: 25px;
@@ -467,6 +468,7 @@
     transform: translateY(0);
 }
 
+
 @media(width <= 600px){
     .sem-container{
         height: 70%;
@@ -498,6 +500,15 @@
 
     .list{
         font-size: 10px;
+    }
+
+    .handcrafters{
+        padding: 0;
+    }
+    
+    img{
+        width: 90px;
+        height: 90px;
     }
 }
 
@@ -533,11 +544,19 @@
     .cName, .subName {
         font-size: 15.5px;
     }
+
+    img{
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media (width<=550px ) and (width >= 430) {
     .btn-container{
         margin-bottom: 20%;
+    }
+    .handcrafters{
+        flex-direction: column;
     }
 }
 
@@ -551,6 +570,12 @@
     .sem-container {
         width: 84%;
         margin-left: 8%;
+    }
+    .handcrafters{
+        flex-direction: column;
+    }
+    .showpop{
+        flex-direction: column;
     }
 }
 
