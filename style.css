@@ -1103,3 +1103,45 @@
     scale: 1;
     transition: 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+.default-text{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 2.7rem;
+    color:snow ;
+    text-shadow: 2px 2px black;
+    animation: text 1.5s alternate infinite ease-in-out;
+    /* color: rgb(207, 207, 70); */
+}
+
+@keyframes text {
+    0%   {transform: scale(.97);}
+    100% {transform: scale(1.08);}
+  }
+
+  img{
+    border: 2px solid #ffffff30;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px;
+
+  }
+
+  .icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin: 2px;
+    padding: 2px;
+    color: #0072b1;
+  }
+
+  #instagram{
+    color: #E1306C;
+  }
+
+  .desc{
+    font-size: 18px;
+    font-weight: 500;
+  }

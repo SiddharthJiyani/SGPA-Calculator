@@ -277,8 +277,7 @@ const semselector = document.querySelector(".semselector");
 
 const Branches = document.querySelectorAll(".Branches") ;
 
-let instructions = document.querySelector(".instructions");
-let instructions_2 = document.querySelector(".instructions_2");
+const defaulttxt=document.querySelectorAll(".default-text");
 // instructions_2.style.display="none";
 
 semselector.addEventListener("change", function () {
@@ -310,7 +309,21 @@ semselector.addEventListener("change", function () {
     cur_sem = semselector.value;
     // console.log(cur_sem);
 
+    if (cur_sem!=="Choose") 
+    {
+        // defaulttxt.style.display="none";
+        
+        for (let i = 0; i < defaulttxt.length; i++) {
+            defaulttxt[i].style.scale="0";
+        }
+    }
 
+    if (cur_sem=="Choose") 
+    {
+        for (let i = 0; i < defaulttxt.length; i++) {
+            defaulttxt[i].style.scale="1.08";
+        }  
+    }
 
     removesemEvent();
     console.log();
