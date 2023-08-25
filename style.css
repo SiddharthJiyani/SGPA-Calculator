@@ -546,8 +546,12 @@
     }
 
     img{
-        width: 150px;
-        height: 150px;
+        width: 150px !important ;
+        height: 150px !important ;
+    }
+
+    .desc p{
+        font-size: 15px;
     }
 }
 
@@ -573,10 +577,23 @@
     }
     .handcrafters{
         flex-direction: column;
+        font-size: 15px;
     }
     .showpop{
         flex-direction: column;
     }
+    img{
+        width: 90px !important;
+        height: 90px !important;
+    }
+    .desc p{
+        font-size: 10px;
+    }
+
+    .icon i{
+        font-size: 20px;
+    }
+
 }
 
 
@@ -1147,8 +1164,8 @@
 
   img{
     border: 2px solid #ffffff30;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     margin: 10px;
 
