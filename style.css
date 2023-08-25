@@ -504,11 +504,15 @@
 
     .handcrafters{
         padding: 0;
+        font-size: 14px;
     }
     
     img{
         width: 90px;
         height: 90px;
+    }
+    .title{
+        font-size: 30px !important;
     }
 }
 
@@ -593,7 +597,13 @@
     .icon i{
         font-size: 20px;
     }
+    .title{
+        font-size: 25px !important;
+    }
 
+    .default-text{
+        font-size: 25px !important;
+    }
 }
 
 
@@ -1186,4 +1196,13 @@
   .desc{
     font-size: 18px;
     font-weight: 500;
+  }
+
+  .title{
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-size: 45px;
+    color:snow ;
+    text-shadow: 4px 4px rgba(2, 2, 2, 0.771);
   }
